@@ -1,7 +1,7 @@
 /**
  * Just replace BAREUR
  */ 
-const BAREURL = 'https://yourdomain'
+const BAREURL = 'https://hideois.952768.xyz/'
 
 /**
  * Non-developers, please modify without authorization, 98% report errors!
