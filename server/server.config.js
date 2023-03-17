@@ -1,7 +1,7 @@
 /**
  * Just replace BAREUR
  */ 
-const BAREURL = 'https://hideipips.q5201681683713.workers.dev/'
+const BAREURL = 'https://idos.9876996.xyz/'
 
 /**
  * Non-developers, please modify without authorization, 98% report errors!
