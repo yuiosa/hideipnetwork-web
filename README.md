@@ -8,37 +8,41 @@ hideipnetwork was developed to evade censorship on the web
 
 ## Quickstart  |  [中文教程](https://github.com/Hideipnetwork/hideipnetwork-web/wiki/Hideipnetwork-Server)
 
-* *Need install Node.js 16+*
+**deploy**
 
-```
-git clone https://github.com/Hideipnetwork/hideipnetwork-web.git
+1. log into your cloudflare
+2. create a workers
+3. copy the code from [workers-bare.js](https://github.com/Hideipnetwork/hideipnetwork-web/blob/main/workers-bare.js)
+4. Create a kv storage named `BARE`, which must be called BARE
+5. Bind the created kv to workers
+6. clone this project
+7. Replace the bare service in [config](https://github.com/Hideipnetwork/hideipnetwork-web/blob/6ab98912298f62a2cd01a082523287631594c525/server/server.config.js#L4)
+8. deploy the project to website
 
-cd hideipnetwork-web
+## Warn
 
-npm i && npm run start
-```
+Developers who have code cleanliness please modify the code by themselves
 
-**Besides that, you have to deploy api** [hidwipnetwork-admin](https://github.com/Hideipnetwork/hideipnetwork-admin) !!!
+## Node.js Version
 
-## Nginx configuration
+If you need node.js version, please check [here](https://github.com/Hideipnetwork/hideipnetwork-web/tree/v1)
 
-```nginx notranslate position-relative overflow-auto
-location / {
-  proxy_busy_buffers_size  512k;
-  proxy_buffers  4 512k;
-  proxy_buffer_size  256k;
-  proxy_pass http://localhost:3000;
-  proxy_http_version 1.1;
-  proxy_set_header Upgrade $http_upgrade;
-  proxy_set_header Connection 'Upgrade';
-  proxy_set_header X-Real-IP $remote_addr;
-  proxy_set_header X-Forwarded-Host $host:$server_port;
-  proxy_set_header X-Forwarded-Server $host;
-  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-  proxy_set_header Host $host;
-}
-```
+## gallery
+
+![](https://alis.pages.dev/file/8e00c895d4eba38855953.png)
+![](https://alis.pages.dev/file/d3a9602d60f4f7fcea23c.png)
+![](https://alis.pages.dev/file/4c62b7652dbeaa9677827.png)
+
+## Donate(TRC20)
+
+![](https://alis.pages.dev/file/7aa0321085f5e963eae40.png)
+
+TQVFVa7Hmbycp1q3r3tUdTL9NzAR1XAy9E
 
 ## contact
 
+TG:[@hidwipnetwork](https://t.me/hideipnetwork)
+
 ![](https://store.heytapimage.com/cdo-portal/feedback/202207/02/b705611e231f230f2fec150f35221c0b.png)
+
+
